@@ -13,7 +13,7 @@ const Dashboard = () => {
   const fetchAppointments = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:4000/api/v1/appointment/getall",
+        "https://mediconnect-backend.onrender.com/api/v1/appointment/getall",
         { withCredentials: true }
       );
       setAppointments(data.appointments);
@@ -25,7 +25,7 @@ const Dashboard = () => {
   const fetchDoctors = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:4000/api/v1/user/doctors"
+        "https://mediconnect-backend.onrender.com/api/v1/user/doctors"
       );
       setDoctors(data.doctors);
     } catch (error) {
@@ -40,7 +40,7 @@ const Dashboard = () => {
   const handleUpdateStatus = async (appointmentId, status) => {
     try {
       const { data } = await axios.put(
-        `http://localhost:4000/api/v1/appointment/update/${appointmentId}`,
+        `hhttps://mediconnect-backend.onrender.com/api/v1/appointment/update/${appointmentId}`,
         { status },
         { withCredentials: true }
       );
