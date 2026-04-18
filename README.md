@@ -537,6 +537,3 @@ SOFTWARE.
 
 ---
 
-⭐ **Star this repository if you found it helpful!**
-
-Made with ❤️ by [Your Name](https://github.com/yourusername)
