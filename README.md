@@ -1,6 +1,7 @@
-# 🏥 ZeeCare Medical Institute - Hospital Management System
+# 🏥 MediConnect - Hospital Management System
 
-A comprehensive Hospital Management System built with the MERN stack, providing separate interfaces for patients and administrators to manage appointments, doctors, and medical services efficiently.
+MediConnect is a full-stack Healthcare Management System built using the MERN stack (MongoDB, Express.js, React.js, Node.js).  
+It provides separate portals for patients and administrators to manage appointments, doctors, and healthcare services efficiently.
 
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
@@ -511,7 +512,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```
 MIT License
 
-Copyright (c) 2025 ZeeCare Medical Institute
+Copyright (c) 2025 MediConnect
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -532,13 +533,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## 📞 Contact
 
-For questions, suggestions, or support:
-
-- **Email**: zeecare@hospital.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile)
 
 ---
 
