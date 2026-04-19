@@ -21,7 +21,7 @@ const Login = () => {
 
         "https://mediconnect-backend-sfkf.onrender.com/api/v1/user/login",
 
-        { email, password, role: "Admin" },
+        { email, password,confirmPassword: password ,role: "Admin" },
 
         {
           withCredentials: true,
