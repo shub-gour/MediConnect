@@ -18,7 +18,7 @@ const Login = () => {
     try {
       await axios
         .post(
-          "https://mediconnect-backend.onrender.com/api/v1/user/login",
+          "https://mediconnect-backend-sfkf.onrender.com/api/v1/user/login",
           { email, password, confirmPassword, role: "Patient" },
           {
             withCredentials: true,

@@ -14,7 +14,7 @@ const MessageForm = () => {
     try {
       await axios
         .post(
-          "https://mediconnect-backend.onrender.com/api/v1/message/send",
+          "https://mediconnect-backend-sfkf.onrender.com/api/v1/message/send",
           { firstName, lastName, email, phone, message },
           {
             withCredentials: true,

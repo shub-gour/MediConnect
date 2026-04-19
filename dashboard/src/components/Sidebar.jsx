@@ -18,7 +18,7 @@ const Sidebar = () => {
 
   const handleLogout = async () => {
     await axios
-      .get("https://mediconnect-backend.onrender.com/api/v1/user/admin/logout", {
+      .get("https://mediconnect-backend-sfkf.onrender.com/api/v1/user/admin/logout", {
         withCredentials: true,
       })
       .then((res) => {

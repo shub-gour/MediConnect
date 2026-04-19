@@ -20,7 +20,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://mediconnect-backend.onrender.com/api/v1/user/patient/me",
+          "https://mediconnect-backend-sfkf.onrender.com/api/v1/user/patient/me",
           {
             withCredentials: true,
           }

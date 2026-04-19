@@ -11,7 +11,7 @@ const Messages = () => {
     const fetchMessages = async () => {
       try {
         const { data } = await axios.get(
-          "https://mediconnect-backend.onrender.com/api/v1/message/getall",
+          "https://mediconnect-backend-sfkf.onrender.com/api/v1/message/getall",
           { withCredentials: true }
         );
         setMessages(data.messages);
