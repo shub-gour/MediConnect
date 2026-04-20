@@ -13,6 +13,7 @@ import axios from "axios";
 import { Context } from "./main";
 import Login from "./Pages/Login";
 import SchizophreniaPredict from "./Pages/SchizophreniaPredict";
+import DiseasePredict from "./Pages/DiseasePredict";
 const App = () => {
   const { isAuthenticated, setIsAuthenticated, setUser } =
     useContext(Context);
@@ -47,6 +48,7 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/predict" element={<SchizophreniaPredict />} />
+          <Route path="/disease-predict" element={<DiseasePredict />} />
         </Routes>
         <Footer />
         <ToastContainer position="top-center" />
