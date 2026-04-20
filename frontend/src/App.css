@@ -458,14 +458,16 @@ nav .navLinks {
 }
 nav .navLinks .links {
   display: flex;
-  gap: 25px;
+  gap: 18px;   /* smaller spacing */
+  flex-wrap: nowrap;
 }
 nav .navLinks .links a {
   text-decoration: none;
   color: #222;
-  font-size: 20px;
+  font-size: 16px;     /* reduced size */
   font-weight: 600;
-  letter-spacing: 1.4px;
+  letter-spacing: 1px;
+  white-space: nowrap; /* prevents text breaking */
 }
 nav .navLinks .links a:hover {
   color: #000;
