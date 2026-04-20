@@ -587,3 +587,104 @@ input[type="time"]:before {
 footer .logo-img{
   width: 100%;
 }
+
+.section-title{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.symptoms-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+
+  gap:12px;
+
+  margin-bottom:25px;
+
+}
+
+.symptom-card{
+
+  border:1px solid #e5e5e5;
+
+  padding:10px 14px;
+
+  border-radius:8px;
+
+  cursor:pointer;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  transition:0.2s;
+
+  background:white;
+
+}
+
+.symptom-card:hover{
+
+  background:#f3f7ff;
+
+  border-color:#4a90e2;
+
+}
+
+.symptom-card.selected{
+
+  background:#4a90e2;
+
+  color:white;
+
+  border-color:#4a90e2;
+
+}
+
+.predict-btn{
+
+  display:block;
+
+  margin:auto;
+
+  padding:10px 25px;
+
+  border:none;
+
+  border-radius:6px;
+
+  background:#4a90e2;
+
+  color:white;
+
+  font-size:16px;
+
+  cursor:pointer;
+
+}
+
+.predict-btn:hover{
+
+  background:#357bd8;
+
+}
+
+.prediction-result{
+
+  text-align:center;
+
+  margin-top:20px;
+
+}
+
+.result-highlight{
+
+  color:#4a90e2;
+
+  font-weight:bold;
+
+}

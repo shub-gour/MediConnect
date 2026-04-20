@@ -98,67 +98,73 @@ const DiseasePredict = () => {
 
       <div className="container">
 
-        <h2>Select Symptoms</h2>
+        <h2 className="section-title">
+          Select Symptoms
+        </h2>
 
         <div className="symptoms-grid">
 
-          {
-
-            symptomsList.map((symptom) => (
-
-              <label key={symptom}>
-
-                <input
-
-                  type="checkbox"
-
-                  value={symptom}
-
-                  onChange={() => handleCheckbox(symptom)}
-
-                />
-
-                {symptom.replaceAll("_"," ")}
-
-              </label>
-
-            ))
-
-          }
-
-        </div>
-
-        <button onClick={predictDisease}>
-
-          Predict Disease
-
-        </button>
-
         {
+          symptomsList.map((symptom) => (
 
-          result && (
+          <label
+            key={symptom}
+            className={`symptom-card ${
+            selectedSymptoms.includes(symptom)
+              ? "selected"
+              : ""
+            }`}
+            >
 
-            <div className="prediction-result">
+            <input
+              type="checkbox"
+              value={symptom}
+              onChange={() => handleCheckbox(symptom)}
+            />
 
-              <h3>
+            <span>
+              {symptom.replaceAll("_"," ")}
+            </span>
 
-                Predicted Disease:
+          </label>
 
-                <span>
+      ))
+    }
 
-                  {" "}{result}
+  </div>
 
-                </span>
+  <button
+    className="predict-btn"
+    onClick={predictDisease}
+  >
 
-              </h3>
+    Predict Disease
 
-            </div>
+  </button>
 
-          )
+  {
+    result && (
 
-        }
+      <div className="prediction-result">
+
+        <h3>
+
+          Predicted Disease:
+
+          <span className="result-highlight">
+
+            {" "}{result}
+
+          </span>
+
+        </h3>
 
       </div>
+
+    )
+  }
+
+</div>
 
     </>
 
