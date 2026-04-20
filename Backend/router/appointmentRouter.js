@@ -1,5 +1,5 @@
 import express from "express";
-import { getMyAppointments } from "../controllers/appointmentController.js";
+import { getMyAppointments } from "../controller/appointmentController.js";
 import {
   deleteAppointment,
   getAllAppointments,
