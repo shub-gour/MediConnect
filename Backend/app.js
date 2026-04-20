@@ -9,7 +9,7 @@ import messageRouter from "./router/messageRouter.js";
 import userRouter from "./router/userRouter.js";
 import appointmentRouter from "./router/appointmentRouter.js";
 import mlRouter from "./router/mlRouter.js";
-
+import diseaseRouter from "./router/diseaseRouter.js";
 const app = express();
 config({ path: "./.env" });
 
@@ -37,6 +37,7 @@ app.use("/api/v1/user", userRouter);
 app.use("/api/v1/appointment", appointmentRouter);
 
 app.use("/api/v1/ml", mlRouter);
+app.use("/api/v1/disease", diseaseRouter);
 
 dbConnection();
 
