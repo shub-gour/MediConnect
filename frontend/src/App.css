@@ -443,13 +443,12 @@ nav {
   z-index: 2;
 }
 nav .logo {
-  flex: 1;
+  flex: 0.6;   /* reduce width occupied by logo */
   display: flex;
   align-items: center;
-  font-size: 2rem;
 }
 nav .navLinks {
-  flex: 2;
+  flex: 3;   /* give more space to menu */
 }
 nav .navLinks {
   display: flex;
@@ -584,7 +583,7 @@ input[type="time"]:before {
   margin-right: 0.5em;
 }
 .logo-img{
-  width: 150px;
+  width: 110px;
 }
 footer .logo-img{
   width: 100%;
