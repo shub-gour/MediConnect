@@ -152,19 +152,59 @@ const SchizophreniaPredict = () => {
 
         {result !== null && (
 
-          <div className="prediction-result">
+  <div className="prediction-result">
 
-            <h3>
+    {(() => {
 
-              Predicted Schizophrenia Prevalence:
+      let riskLevel = "";
+      let riskColor = "";
 
-              <span> {result.toFixed(4)}</span>
+      if (result < 0.30) {
+        riskLevel = "Low Risk";
+        riskColor = "green";
+      }
 
-            </h3>
+      else if (result < 0.60) {
+        riskLevel = "Medium Risk";
+        riskColor = "orange";
+      }
 
-          </div>
+      else {
+        riskLevel = "High Risk";
+        riskColor = "red";
+      }
 
-        )}
+      return (
+
+        <>
+
+          <h3>
+
+            Risk Level:
+
+            <span style={{ color: riskColor }}>
+              {" "}{riskLevel}
+            </span>
+
+          </h3>
+
+          <p>
+
+            Prediction Score:
+
+            <strong> {result.toFixed(4)} </strong>
+
+          </p>
+
+        </>
+
+      );
+
+    })()}
+
+  </div>
+
+)}
 
       </div>
 
