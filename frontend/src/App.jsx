@@ -14,6 +14,7 @@ import { Context } from "./main";
 import Login from "./Pages/Login";
 import SchizophreniaPredict from "./Pages/SchizophreniaPredict";
 import DiseasePredict from "./Pages/DiseasePredict";
+import MyAppointments from "./Pages/MyAppointments";
 const App = () => {
   const { isAuthenticated, setIsAuthenticated, setUser } =
     useContext(Context);
@@ -49,6 +50,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/predict" element={<SchizophreniaPredict />} />
           <Route path="/disease-predict" element={<DiseasePredict />} />
+          <Route path="/my-appointments" element={<MyAppointments />} />
         </Routes>
         <Footer />
         <ToastContainer position="top-center" />

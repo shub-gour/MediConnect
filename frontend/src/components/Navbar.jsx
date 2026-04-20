@@ -43,6 +43,9 @@ const Navbar = () => {
             <Link to={"/appointment"} onClick={() => setShow(!show)}>
               Appointment
             </Link>
+            <Link to={"/my-appointments"} onClick={() => setShow(!show)}>
+              My Appointments
+            </Link>
 
             <Link to={"/predict"} onClick={() => setShow(!show)}>
               AI Prediction
